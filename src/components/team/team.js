@@ -6,7 +6,7 @@ import img2 from "./pic1.png";
 class Team extends React.Component {
   render() {
     return (
-      <div>
+      <div class="main-container">
         <div class="person">
           <div class="container">
             <div class="container-inner">

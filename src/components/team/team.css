@@ -1,14 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Sumana:wght@700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Sumana:wght@700&display=swap"); */
 body {
-  align-items: center;
   background-color: #f2f2f2;
   display: flex;
-  font-family: "Merriweather", serif;
-  flex-wrap: wrap;
   justify-content: center;
-  height: 100vh;
-  margin: 0;
 }
+@media screen and (max-width: 768px) {
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-container {
+    display: flex;
+  }
+}
+
 .person {
   align-items: center;
   display: flex;
