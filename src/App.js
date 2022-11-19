@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Team from "./components/team/team";
+import Logo from "./components/logo/logo";
 import { useEffect, useState } from "react";
 
 const parseJSON = (resp) => (resp.json ? resp.json() : resp);
@@ -35,6 +36,7 @@ const App = () => {
   console.log(restaurants);
   return (
     <div className="App">
+      <Logo />
       <Team />
       <ul>
         {restaurants.map(({ id, attributes }) => (

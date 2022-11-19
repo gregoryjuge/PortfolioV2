@@ -1,0 +1,11 @@
+/* body {
+  background-color: #222222;
+} */
+#container {
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  /* font-size: 7em; */
+  color: #112c12;
+}
