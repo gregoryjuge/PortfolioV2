@@ -1,0 +1,29 @@
+.hero {
+  display: flex;
+}
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header-logo header-logo menu"
+    "text-bloc text-bloc menu"
+    ". . .";
+  width: 95vw;
+}
+
+.header-logo {
+  grid-area: header-logo;
+  justify-self: start;
+}
+
+.menu {
+  grid-area: menu;
+  justify-self: end;
+}
+
+.text-bloc {
+  grid-area: text-bloc;
+}

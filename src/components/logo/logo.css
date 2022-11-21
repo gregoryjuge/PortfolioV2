@@ -1,11 +1,4 @@
-/* body {
-  background-color: #222222;
-} */
-#container {
-  display: flex;
-  justify-content: center;
-}
 .logo {
-  /* font-size: 7em; */
+  font-size: 3.5rem;
   color: #112c12;
 }
