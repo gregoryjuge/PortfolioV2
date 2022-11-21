@@ -1,36 +1,62 @@
-/* .burger-container {
-    z-50 flex flex-row items-center justify-center bg-pink py-5 lg:hidden
+/* @media screen and (min-width: 768px) {
+  .burger-contanier {
+    display: none;
+  }
 } */
+@media screen and (min-width: 768px) {
+  /* .burger-container {
+    z-index: 50;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  } */
+  /* 
+  .burger-section {
+    display: flex;
+  } */
+  /* 
+  .hamburger-icon {
+    margin-left: 0.5rem;
+  } */
 
-/* .burger-section {
-    flex
-} */
-
-/* .hamburger-icon {
-    space-y-2
-
-} */
-
-/* span
+  /* span
 block h-1 w-8 animate-pulse bg-white */
 
-/* .button-is-open {
-    absolute top-0 right-0 px-8 py-8
+  /* .button-is-open {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  } */
+  /* .svg1 {
+    height: 2rem;
+    width: 2rem;
+  } */
 
-} */
-/* svg1 
-h-8 w-8 */
+  /* .list-modal-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: rgb(255 255 255);
+  } */
+  /* .li-1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  } */
+  /* .div-1 {
+    margin-top: 1rem;
+  } */
 
-/* .list-modal-item {
-    flex flex-col items-center justify-between font-gotham-ultra text-xl text-white
-} */
-/* .li-1 {
-    my-4
-} */
-/* .div-1 {
-    mt-4
-} */
-
-/* .svg-2 {
-    w-40 fill-pink stroke-pink
-} */
+  /* .svg-2 {
+    width: 10rem;
+    fill: #f97316;
+    stroke: #f97316;
+  } */
+}

@@ -8,16 +8,16 @@ import TextBloc from "../titles/text-bloc";
 class Hero extends React.Component {
   render() {
     return (
-      <div class="hero">
-        <div class="hero-container">
-          <div class="header-logo">
+      <div className="hero">
+        <div className="hero-container">
+          <div className="header-logo">
             <Logo />
           </div>
-          <div class="menu">
+          <div className="menu">
             <Menu />
             {/* <BurgerMenu /> */}
           </div>
-          <div class="text-bloc">
+          <div className="text-bloc">
             <TextBloc />
           </div>
         </div>

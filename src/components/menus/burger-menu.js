@@ -17,11 +17,11 @@ export default class BurgerMenu extends React.Component {
   render() {
     const { isNavOpen } = this.state;
     return (
-      <div class="burger-container">
+      <div className="burger-container">
         <nav>
-          <section class="burger-section">
+          <section className="burger-section">
             <div
-              class="hamburger-icon"
+              className="hamburger-icon"
               role="button"
               tabIndex={0}
               onClick={() => this.setState({ isNavOpen: true })}

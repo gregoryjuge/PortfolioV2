@@ -30,7 +30,7 @@ const Logo = () => {
   if (error) {
     return <div>An error occured: {error.message}</div>;
   }
-  console.log(contentLogo);
+  // console.log(contentLogo);
   return (
     <div id="container">
       {Object.keys(contentLogo).map((item, i) => (

@@ -30,7 +30,7 @@ const Menu = () => {
   if (error) {
     return <div>An error occured: {error.message}</div>;
   }
-  console.log(contentMenus);
+  // console.log(contentMenus);
   return (
     <ul className="menu_container">
       <li className="menu_items">
@@ -45,14 +45,14 @@ const Menu = () => {
           <a href={attributes.menu_link2} key={id}>
             {attributes.menu_item2}
           </a>
-        ))}{" "}
+        ))}
       </li>
       <li className="menu_items">
         {contentMenus.map(({ id, attributes }) => (
           <a href={attributes.menu_link3} key={id}>
             {attributes.menu_item3}
           </a>
-        ))}{" "}
+        ))}
       </li>
     </ul>
   );
