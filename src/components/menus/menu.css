@@ -1,9 +1,17 @@
-.menu_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin-top: 5rem;
-  width: fit-content;
+@media screen and (max-width: 768px) {
+  .menu_container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 5rem;
+    width: fit-content;
+  }
 }
 
 .menu_items {

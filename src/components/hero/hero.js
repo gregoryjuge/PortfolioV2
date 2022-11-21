@@ -2,7 +2,8 @@ import React from "react";
 import "./hero.css";
 import Logo from "../logo/logo";
 import Menu from "../menus/menu";
-import MainTitle from "../titles/main-title";
+// import BurgerMenu from "../menus/burger-menu";
+import TextBloc from "../titles/text-bloc";
 
 class Hero extends React.Component {
   render() {
@@ -14,9 +15,10 @@ class Hero extends React.Component {
           </div>
           <div class="menu">
             <Menu />
+            {/* <BurgerMenu /> */}
           </div>
           <div class="text-bloc">
-            <MainTitle />
+            <TextBloc />
           </div>
         </div>
       </div>
