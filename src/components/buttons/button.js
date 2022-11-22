@@ -34,7 +34,7 @@ const Button = () => {
   return (
     <div>
       {contentButtons.map(({ id, attributes }) => (
-        <a class="button button-2" href={attributes.path_button} key={id}>
+        <a className="button button-2" href={attributes.path_button} key={id}>
           {attributes.content_button}
         </a>
       ))}
