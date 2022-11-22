@@ -3,7 +3,8 @@ import "./hero.css";
 import Logo from "../logo/logo";
 import Menu from "../menus/menu";
 // import BurgerMenu from "../menus/burger-menu";
-import TextBloc from "../titles/text-bloc";
+import TextBloc from "../text-bloc/text-bloc";
+import Button from "../buttons/button";
 
 class Hero extends React.Component {
   render() {
@@ -19,6 +20,9 @@ class Hero extends React.Component {
           </div>
           <div className="text-bloc">
             <TextBloc />
+          </div>
+          <div className="contact-button">
+            <Button />
           </div>
         </div>
       </div>
