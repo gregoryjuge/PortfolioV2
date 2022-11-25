@@ -25,7 +25,7 @@ a {
   text-decoration: none;
   color: black;
 }
-a:after {
+.menu_items a:after {
   background: none repeat scroll 0 0 transparent;
   content: "";
   display: block;
@@ -35,7 +35,7 @@ a:after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-a:hover:after {
+.menu_items a:hover:after {
   width: 100%;
   left: 0;
 }
