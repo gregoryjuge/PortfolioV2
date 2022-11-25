@@ -25,3 +25,17 @@ a {
   text-decoration: none;
   color: black;
 }
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 50%;
+  background: #c9e0df;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after {
+  width: 100%;
+  left: 0;
+}

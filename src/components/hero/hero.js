@@ -22,6 +22,7 @@ class Hero extends React.Component {
             <TextBloc />
           </div>
           <div className="contact-button">
+            {" "}
             <Button />
           </div>
         </div>
