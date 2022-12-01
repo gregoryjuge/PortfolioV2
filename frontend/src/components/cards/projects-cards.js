@@ -10,7 +10,7 @@ const Cards = () => {
         <div id="card">
           <img src={project1} alt="project-visual" />
           <div id="content">
-            <h3 class="title-card"> - Ecoutez La Ville -</h3>
+            <h3 className="title-card"> - Ecoutez La Ville -</h3>
             <p>
               Mission:
               <br /> Création d'un site vitrine
