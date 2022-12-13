@@ -1,5 +1,6 @@
 import * as React from "react";
 import "./logo.css";
+import Team from "../team/team";
 import { useEffect, useState } from "react";
 
 const parseJSON = (resp) => (resp.json ? resp.json() : resp);
@@ -33,11 +34,12 @@ const Logo = () => {
   // console.log(contentLogo);
   return (
     <div id="container">
-      {Object.keys(contentLogo).map((item, i) => (
+      {/* {Object.keys(contentLogo).map((item, i) => (
         <h1 className="logo" key={i}>
           {contentLogo[item].name}
         </h1>
-      ))}
+      ))} */}
+      <Team />
     </div>
   );
 };
