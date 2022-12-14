@@ -21,7 +21,10 @@ const Logo = () => {
   const [contentLogo, setcontentLogo] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:1337/api/logo", { headers, method: "GET" })
+    fetch("http://localhost:1337/api/logo?populate=*", {
+      headers,
+      method: "GET",
+    })
       .then(checkStatus)
       .then(parseJSON)
       .then(({ data }) => setcontentLogo(data))
@@ -36,9 +39,18 @@ const Logo = () => {
     <div id="container">
       {/* {Object.keys(contentLogo).map((item, i) => (
         <h1 className="logo" key={i}>
-          {contentLogo[item].name}
+          {contentLogo.attributes.mailto}
         </h1>
       ))} */}
+      {Object.keys(contentLogo).map((id) => (
+        <a href={`mailto:${contentLogo.attributes.mailto}`} key={id}>
+          <img
+            alt="mail-icon"
+            className="h-8"
+            src={`http://localhost:1337${contentLogo.attributes.icon.data[0].attributes.url}`}
+          />
+        </a>
+      ))}
       <Team />
     </div>
   );

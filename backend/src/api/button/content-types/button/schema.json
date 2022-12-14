@@ -4,7 +4,8 @@
   "info": {
     "singularName": "button",
     "pluralName": "buttons",
-    "displayName": "Button"
+    "displayName": "Button",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,6 +16,12 @@
       "type": "string"
     },
     "path_button": {
+      "type": "string"
+    },
+    "socialNetwork": {
+      "type": "string"
+    },
+    "socialDepository": {
       "type": "string"
     }
   }
