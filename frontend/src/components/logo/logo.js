@@ -61,17 +61,17 @@ const Team = () => {
 
           <div className="divider"></div>
           {Object.keys(contentTeam).map((item, i) => (
-            <div className="name lg:pb-12 pb-4" key={i}>
+            <div className="name pb-4" key={i}>
               {contentTeam[0].attributes.name}
             </div>
           ))}
         </div>
-        <div className="logos flex justify-center lg:justify-around space-x-6 lg:space-x-0">
+        <div className="logos flex justify-center space-x-6">
           {Object.keys(contentTeam).map((id) => (
             <a href={contentTeam[0].attributes.path2} key={id}>
               <img
                 alt="depo-icon"
-                className="h-8"
+                className="h-6"
                 src={`http://localhost:1337${contentTeam[0].attributes.icon2.data.attributes.url}`}
               />
             </a>
@@ -80,7 +80,7 @@ const Team = () => {
             <a href={`mailto:${contentTeam[0].attributes.mailto}`} key={id}>
               <img
                 alt="mail-icon"
-                className="h-10"
+                className="h-6 animate-pulse"
                 src={`http://localhost:1337${contentTeam[0].attributes.icon1.data.attributes.url}`}
               />
             </a>
@@ -89,7 +89,7 @@ const Team = () => {
             <a href={contentTeam[0].attributes.path3} key={id}>
               <img
                 alt="social-icon"
-                className="h-8"
+                className="h-6"
                 src={`http://localhost:1337${contentTeam[0].attributes.icon3.data.attributes.url}`}
               />
             </a>
