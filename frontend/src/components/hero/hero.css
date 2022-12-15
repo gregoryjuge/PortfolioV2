@@ -2,9 +2,9 @@
   display: flex;
 }
 @media screen and (min-width: 768px) {
-  .hero-container {
+  /* .hero-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 12fr 2fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -12,15 +12,19 @@
       "header-logo header-logo menu"
       "text-bloc text-bloc menu"
       ". . .";
-    width: 95vw;
+    width: 97vw;
+  } */
+  .hero-container {
+    display: flex;
+    width: 97vw;
   }
 
-  .header-logo {
+  /* .header-logo {
     grid-area: header-logo;
     justify-self: start;
-  }
+  } */
 
-  .menu {
+  /* .menu {
     grid-area: menu;
     justify-self: end;
   }
@@ -32,5 +36,5 @@
   .contact-button {
     display: grid;
     justify-self: end;
-  }
+  } */
 }
