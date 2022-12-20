@@ -37,7 +37,7 @@
     height: 100vh;
     padding: 2rem;
     visibility: hidden;
-    background-color: #000;
+    background-color: #222222;
     transition: all 0.8s ease-out;
   }
   .show-nav .navbar__links {
