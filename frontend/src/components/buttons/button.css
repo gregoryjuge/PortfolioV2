@@ -1,6 +1,5 @@
 .button-2 {
   font-size: 0.8rem !important;
-
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
@@ -24,16 +23,28 @@
   width: 100%;
   height: 100%;
   background: black !important;
-  opacity: 0.15;
+  opacity: 0.35;
   transform: translate3d(10px, 10px, 0);
-  z-index: 10;
+  /* z-index: 40; */
   border-radius: inherit;
   transition: 0.35s ease-in-out;
 }
 .button:hover:before {
   transform: translate3d(0, 0, 0) !important;
-  opacity: 0.25 !important;
+  opacity: 0.35 !important;
+  color: black !important;
 }
-.button-2:before {
+.button:hover a {
+  color: #000 !important;
+  z-index: 90;
+}
+/* .button-2:before {
   background: teal !important;
+} */
+
+.button-2:before {
+  background: #fe4a49 !important;
+}
+.button button-2 {
+  color: black;
 }

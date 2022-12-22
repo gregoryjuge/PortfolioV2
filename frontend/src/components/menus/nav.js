@@ -34,7 +34,9 @@ function Nav() {
   }
   return (
     <nav
-      className={` navbar ${showLinks ? "show-nav" : "hide-nav"} md:invisible `}
+      className={` navbar ${
+        showLinks ? "show-nav" : "hide-nav"
+      } md:invisible w-1/2 flex self-end `}
     >
       <ul className="navbar__links" onClick={handleShowLinks}>
         <li className="navbar__item slideInDown-1">

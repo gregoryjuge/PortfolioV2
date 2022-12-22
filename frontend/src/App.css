@@ -7,7 +7,7 @@
   font-family: "Courier New", monospace, serif !important;
   display: flex;
   flex-direction: column;
-  background-color: #fdfffc;
+  /* background-color: #fdfffc; */
 }
 html {
   scroll-behavior: smooth;

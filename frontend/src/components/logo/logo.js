@@ -79,7 +79,7 @@ const Team = () => {
               <a href={`mailto:${contentTeam[0].attributes.mailto}`} key={id}>
                 <img
                   alt="mail-icon"
-                  className="h-6 animate-pulse"
+                  className="h-6 animate-pulse "
                   src={`http://localhost:1337${contentTeam[0].attributes.icon1.data.attributes.url}`}
                 />
               </a>

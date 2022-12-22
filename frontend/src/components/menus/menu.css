@@ -24,7 +24,7 @@
 }
 a {
   text-decoration: none;
-  color: black;
+  font-color: black;
 }
 .menu_items a:after {
   background: none repeat scroll 0 0 transparent;
