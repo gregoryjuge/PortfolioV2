@@ -4,7 +4,8 @@
   "info": {
     "singularName": "projet",
     "pluralName": "projets",
-    "displayName": "Projets"
+    "displayName": "Projets",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,17 +13,33 @@
   "pluginOptions": {},
   "attributes": {
     "imageHero": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
-    "description": {
-      "type": "richtext"
+    "path": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "mission": {
+      "type": "string"
+    },
+    "missionDescription": {
+      "type": "text"
+    },
+    "tools": {
+      "type": "string"
+    },
+    "toolsDescription": {
+      "type": "text"
     }
   }
 }
