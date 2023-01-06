@@ -1,7 +1,7 @@
 import * as React from "react";
 import "./text-bloc.css";
 import { useEffect, useState } from "react";
-import Button from "../buttons/button";
+// import Button from "../buttons/button";
 
 const parseJSON = (resp) => (resp.json ? resp.json() : resp);
 
@@ -34,14 +34,14 @@ const TextBloc = () => {
   // console.log(contentTextBlocs);
   return (
     <div className="flex items-center	">
-      <div className="text-bloc md:space-y-12 pt-6">
+      <div className="text-bloc md:space-y-12 pt-6 text-justify">
         {contentTextBlocs.map(({ id, attributes }) => (
           <p key={id}>{attributes.bloc}</p>
         ))}
         {contentTextBlocs.map(({ id, attributes }) => (
           <p key={id}>{attributes.bloc2}</p>
         ))}
-        <Button />
+        {/* <Button /> */}
       </div>
     </div>
   );

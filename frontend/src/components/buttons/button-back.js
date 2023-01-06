@@ -26,6 +26,7 @@ const ScrollToTop = () => {
           className="icon-position icon-style"
           onClick={goToTop}
           src={ArrowUp}
+          alt="arrow-up"
         />
       )}
     </div>

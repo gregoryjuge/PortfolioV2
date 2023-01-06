@@ -1,17 +1,18 @@
 .global-container {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  /* height: 100vh; */
+  height: fit-content;
 }
 .card-container {
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 #card {
   /* background: rgb(245, 245, 245, 0.7); */
   width: 300px;
-  height: 200px;
+  height: 500px;
   box-shadow: 4px -4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   transition: 0.3s;

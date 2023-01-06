@@ -67,7 +67,12 @@ const Team = () => {
           ))}
           <div className="logos flex justify-center space-x-6">
             {Object.keys(contentTeam).map((id) => (
-              <a href={contentTeam[0].attributes.path2} key={id}>
+              <a
+                href={contentTeam[0].attributes.path2}
+                key={id}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img
                   alt="depo-icon"
                   className="h-6"
@@ -76,7 +81,12 @@ const Team = () => {
               </a>
             ))}
             {Object.keys(contentTeam).map((id) => (
-              <a href={`mailto:${contentTeam[0].attributes.mailto}`} key={id}>
+              <a
+                href={`mailto:${contentTeam[0].attributes.mailto}`}
+                key={id}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img
                   alt="mail-icon"
                   className="h-6 animate-pulse "
@@ -85,7 +95,12 @@ const Team = () => {
               </a>
             ))}
             {Object.keys(contentTeam).map((id) => (
-              <a href={contentTeam[0].attributes.path3} key={id}>
+              <a
+                href={contentTeam[0].attributes.path3}
+                key={id}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img
                   alt="social-icon"
                   className="h-6"

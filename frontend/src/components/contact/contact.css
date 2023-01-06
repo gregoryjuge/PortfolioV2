@@ -1,0 +1,13 @@
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: black !important;
+}
+
+.sendButton {
+  color: white !important;
+  font-size: 0.8rem !important;
+  font-family: sans-serif;
+}

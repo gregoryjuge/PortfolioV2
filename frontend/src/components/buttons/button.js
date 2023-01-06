@@ -20,7 +20,10 @@ const Button = () => {
   const [contentButtons, setcontentButtons] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:1337/api/buttons", { headers, method: "GET" })
+    fetch("http://localhost:1337/api/buttons", {
+      headers,
+      method: "GET",
+    })
       .then(checkStatus)
       .then(parseJSON)
       .then(({ data }) => setcontentButtons(data))
@@ -34,8 +37,14 @@ const Button = () => {
   return (
     <div>
       {contentButtons.map(({ id, attributes }) => (
-        <a className="button button-2" href={attributes.path_button} key={id}>
-          {attributes.content_button}
+        <a
+          className="button button-2"
+          href={attributes.path_button}
+          key={id}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {attributes.content_button} <i className="fas fa-download" />
         </a>
       ))}
     </div>
